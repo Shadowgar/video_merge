@@ -1,0 +1,46 @@
+Overview
+This software allows you to merge multiple .avi video files into a single video file. The script uses FFmpeg for video processing and is intended for easy use with minimal setup. Once completed, the merged video file will be saved to the Desktop.
+
+Prerequisites
+Ensure FFmpeg is installed and accessible from the command line.
+Place all script files in a single folder, e.g., C:\Merge Video Script.
+Files Needed:
+merge_videos.bat - The main script to start the merging process.
+select_files.ps1 - PowerShell script to select .avi files.
+How to Use:
+Launch the Software:
+
+Open the C:\Merge Video Script folder.
+Double-click on the merge_videos.bat file to start the merging process.
+Selecting Files:
+
+When prompted, a file selection window will open.
+Navigate to the folder containing the .avi files you want to merge.
+Hold Ctrl to select multiple files or use Shift to select a range.
+Click Open after selecting your files. The program will save these files to a list (filelist.txt) to be used for merging.
+Enter the Output File Name:
+
+When prompted, type in a name for the merged video file (without the extension) and press Enter.
+If you skip this, the default name will be output.avi.
+Merging Process:
+
+The program will now merge the selected files using FFmpeg. This may take some time depending on the size and number of video files.
+A progress message will display, indicating that FFmpeg is merging the files.
+Completion:
+
+Once merging is complete, the merged file will appear on the Desktop as <output_filename>.avi.
+The program will delete the temporary file filelist.txt.
+Exit:
+
+A message will appear indicating that the merge was successful.
+Press any key to exit the program.
+
+
+Troubleshooting
+File Not Found Error: Ensure that all files are .avi format and accessible.
+
+
+License
+This software is provided under the MIT License.
+
+If you encounter any issues, please cotact roccopa@upmc.edu
